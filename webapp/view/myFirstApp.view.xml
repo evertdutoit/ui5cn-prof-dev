@@ -1,0 +1,20 @@
+<mvc:View controllerName="edt.myFirstApp.controller.myFirstApp" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Input id="idInput"
+							   value="{hello>/recipient/name}"
+							   valueLiveUpdate="true"
+							   placeholder="Enter Name"
+							   liveChange="inputChange" />
+						<Button text="Submit"
+								type="Accept"
+								press="toSecondPage" />
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

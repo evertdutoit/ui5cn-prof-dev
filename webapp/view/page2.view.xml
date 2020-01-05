@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="edt.myFirstApp.controller.page2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Second Page"
+				  showNavButton="true"
+				  navButtonPress="onNavBack">
+				<content>
+					<Label id="idLabel"
+					       text="{hello>/recipient/name}" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
