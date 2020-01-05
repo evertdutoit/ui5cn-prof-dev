@@ -1,0 +1,49 @@
+<mvc:View 
+	controllerName="edt.simpleForm.controller.View1" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	displayBlock="true" 
+	xmlns="sap.m"
+	xmlns:u="sap.ui.unified"
+	xmlns:f="sap.ui.layout.form" >
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<f:SimpleForm id="idSimpleForm"
+									  title="{i18n>formTitle}"
+									  editable="true"
+									  layout="ResponsiveLayout">
+							<f:content>
+								<Label text="{i18n>simpleFormLabel}" />
+								<Input placeholder="Simple Input" />
+								<Button text="Press Me" />
+								<RatingIndicator value="4.7" />
+								<TextArea value="Awesome Text Area" />
+								<DatePicker placeholder="Enter Date" />
+								<u:FileUploader />
+								<Bar>
+									<contentRight>
+										<Button text="Right side" />
+									</contentRight>
+								</Bar>
+								<VBox>
+									<items>
+										<Button text="VBOX btn 1" />
+										<Button text="VBOX btn 2" />
+									</items>
+								</VBox>
+								<HBox>
+									<items>
+										<Button text="HBOX btn 1" />
+										<Button text="HBOX btn 2" />
+									</items>
+								</HBox>
+							</f:content>
+						</f:SimpleForm>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
